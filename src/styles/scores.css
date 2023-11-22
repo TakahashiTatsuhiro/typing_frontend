@@ -1,0 +1,17 @@
+.graph {
+    margin: auto;
+}
+
+.upperContents {
+    display: flex;
+    justify-content: center; /* 横方向の中央に配置 */
+    align-items: center; /* 垂直方向の中央に配置 */
+    /* gap: 2px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 1.5rem;
+    margin: 0; /* デフォルトのマージンをリセット */
+}

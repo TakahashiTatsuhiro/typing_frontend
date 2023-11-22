@@ -1,0 +1,26 @@
+.wait {
+    font-size: 1.5rem;
+    color: rgb(100, 102, 105);
+}
+
+.correct {
+    font-size: 1.5rem;
+    color: rgb(209, 208, 197);
+}
+
+.incorrect {
+    font-size: 1.5rem;
+    color: rgb(202, 71, 84);
+}
+
+.spans {
+    margin: auto auto;
+    width:70%;
+    height:70%
+}
+
+.message {
+    margin: auto auto;
+    width: 70%;
+    font-size: 1.2rem;
+}
