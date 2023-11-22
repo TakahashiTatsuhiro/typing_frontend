@@ -13,7 +13,7 @@ const Navbar = () => {
 	const handleLogout = async () => {
 		try {
 			// バックエンドのログアウトエンドポイントにリクエストを送信
-			const response = await fetch('http://localhost:3001/logout', {
+			const response = await fetch('https://typing-backend-kj2p.onrender.com/logout', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

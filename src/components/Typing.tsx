@@ -16,14 +16,14 @@ const Typing = () => {
 	const [rawInput, setRawInput] = useState(''); //ユーザーの打った内容そのもの
 	const [input, setInput] = useState(''); //rawInputを結果集計のために加工したもの('?'を空文字に変換して、空文字でsplitする)
 	const [state, setState] = useState<number>(0); //プレイ状態のステートマシン(0:開始前、1:プレイ中、2:プレイ終了後)
-	const limitSec = 10; //時間制限(秒)
+	const limitSec = 60; //時間制限(秒)
 	const [countDown, setCountDown] = useState(limitSec);
 
 	//正解配列--------------------------------------
 	useEffect(() => {
 		const getWords = async () => {
 			try {
-				const response = await fetch('http://localhost:3001/words');
+				const response = await fetch('https://typing-backend-kj2p.onrender.com/words');
 				const data = await response.json();
 				if (response.ok) {
 					setSampleArr(data);
@@ -140,7 +140,7 @@ const Typing = () => {
 	};
 	const sendResult = async (wpm: number) => {
 		try {
-			const response = await fetch('http://localhost:3001/result', {
+			const response = await fetch('https://typing-backend-kj2p.onrender.com/result', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
