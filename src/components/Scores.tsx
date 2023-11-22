@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Legend, Tooltip } from 'recharts';
 import { useAuth } from '../contexts/AuthContext';
-import { Score, midData, finalData } from '../../../globals';
+import { Score, midData, finalData } from '../../globals';
 import '../styles/scores.css';
 
 const Scores = () => {
